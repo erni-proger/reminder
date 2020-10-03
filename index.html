@@ -19,413 +19,719 @@
             NOT HARD
         </div>
         <div align="center">
+            <img src="images/image1.2.png" width="20%" height="width" alt="Html">
             <img src="images/image1.jpg" width="35%" height="width" alt="Python">
+            <img src="images/image1.3.png" width="17%" height="width" alt="CSS">
         </div>
-        <h1 align="center">Удобная памятка для Python</h1>
+        <h1 align="center">Удобная памятка для Python, HTML и CSS</h1>
 
-        <section class="navig" align="center">
-            <h2>Навигация по сайту</h2>
-            <ul>
-                <li>
-                    <a href="#pt1">Методы списков</a>
-                </li>
-                <li>
-                    <a href="#pt2">Методы строк</a>
-                </li>
-                <li>
-                    <a href="#pt3">Карточка pdf</a>
-                </li>
-            </ul>
-        </section>
     </header>
     <main>
-        <article id="pt1" align="center">
-            <h2>Методы списков</h2>
-            <div align="center">
-                <table style="border-collapse: collapse; width: 50%; height: 674px;" border="1" cellpadding="5px">
-                    <tbody>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><strong>Операция</strong></td>
-                            <td style="width: 42.6684%; height: 18px;"><strong>Описание</strong></td>
-                            <td style="width: 38.3205%; height: 18px;"><strong>Пример</strong></td>
-                        </tr>
-                        <tr style="height: 19px;">
-                            <td style="width: 19.011%; height: 19px;"><code>x <strong>in</strong> a</code></td>
-                            <td style="width: 42.6684%; height: 19px;">Проверка, что <code>x</code> содержится в
-                                <code>а</code></td>
-                            <td style="width: 38.3205%; height: 19px;"><code>5 in [2, 3, 5]</code></td>
-                        </tr>
-                        <tr style="height: 38px;">
-                            <td style="width: 19.011%; height: 38px;"><code>x <strong>not in</strong> a</code></td>
-                            <td style="width: 42.6684%; height: 38px;">Проверка, что&nbsp;<code>x</code>&nbsp;не
-                                содержится в&nbsp;<code>а</code><br>То же, что и&nbsp;<code>not (x in a)</code></td>
-                            <td style="width: 38.3205%; height: 38px;"><code>5 not in [2, 3, 6]</code></td>
-                        </tr>
-                        <tr style="height: 19px;">
-                            <td style="width: 19.011%; height: 19px;"><code>a + a2</code></td>
-                            <td style="width: 42.6684%; height: 19px;">Конкатенация списков, то есть новый список, в
-                                котором сначала идут все элементы&nbsp;<code>a</code>,<br>а затем все
-                                элементы&nbsp;<code>a2</code></td>
-                            <td style="width: 38.3205%; height: 19px;"><code>[2, 4] + [5, 3] == [2, 4, 5, 3]</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a * k</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Список&nbsp;<code>a</code>,
-                                повторенный&nbsp;<code>k</code>&nbsp;раз</td>
-                            <td style="width: 38.3205%; height: 18px;"><code>[2, 3] * 3 == [2, 3, 2, 3, 2, 3]</code>
-                            </td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a[n]</code></td>
-                            <td style="width: 42.6684%; height: 18px;"><code>n</code>-й элемент
-                                списка,<br>отрицательные&nbsp;<code>n</code>&nbsp;— для отсчета с конца</td>
-                            <td style="width: 38.3205%; height: 18px;">
-                                <code>[2, 3, 7][0] == 2</code><br><code>[2, 3, 7][-1] == 7</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a[start:stop:step]</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Срез списка</td>
-                            <td style="width: 38.3205%; height: 18px;"><code>[2, 3, 7][:2] == [2, 3]</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>len(a)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Длина списка</td>
-                            <td style="width: 38.3205%; height: 18px;"><code>len([2, 3, 7]) == 3</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>max(a)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Максимальный элемент списка</td>
-                            <td style="width: 38.3205%; height: 18px;"><code>max([2, 3, 7]) == 7</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>min(a)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Минимальный элемент списка</td>
-                            <td style="width: 38.3205%; height: 18px;"><code>min([2, 3, 7]) == 2</code></td>
-                        </tr>
-                        <tr style="height: 19px;">
-                            <td style="width: 19.011%; height: 19px;"><code>sum(a)</code></td>
-                            <td style="width: 42.6684%; height: 19px;">Сумма элементов списка</td>
-                            <td style="width: 38.3205%; height: 19px;"><code>sum([2, 3, 7]) == 12</code></td>
-                        </tr>
-                        <tr style="height: 54px;">
-                            <td style="width: 19.011%; height: 54px;"><code>a.index(x)</code></td>
-                            <td style="width: 42.6684%; height: 54px;">Индекс первого
-                                вхождения&nbsp;<code>x</code>&nbsp;в&nbsp;<code>a</code><br>(вызовет ошибку,
-                                если&nbsp;<code>x not in a</code>, то есть если&nbsp;<code>х</code>&nbsp;отсутствует
-                                в&nbsp;<code>а</code>)</td>
-                            <td style="width: 38.3205%; height: 54px;"><code>[2, 3, 7].index(7) == 2</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a.count(x)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Количество
-                                вхождений&nbsp;<code>x</code>&nbsp;в&nbsp;<code>a</code></td>
-                            <td style="width: 38.3205%; height: 18px;"><code>[2, 7, 3, 7].count(7) == 2</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a.append(x)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Добавить&nbsp;<var>x</var>&nbsp;в
-                                конец&nbsp;<var>a</var></td>
-                            <td style="width: 38.3205%; height: 18px;">
-                                <code>a = [2, 3, 7]</code><br><code>a.append(8)</code><br><code>a == [2, 3, 7, 8]</code>
-                            </td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a.extend(a2)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Добавить элементы коллекции <var>a2</var>&nbsp;в
-                                конец&nbsp;<var>a</var></td>
-                            <td style="width: 38.3205%; height: 18px;">
-                                <code>a = [2, 3, 7]</code><br><code>a.extend([8, 4, 5])</code><br><code>a == [2, 3, 7, 8, 4, 5]</code>
-                            </td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code><strong>del</strong> a[n]</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Удалить <var>n</var>-й элемент списка</td>
-                            <td style="width: 38.3205%; height: 18px;">
-                                <code>a = [2, 3, 7]</code><br><code>del a[1]</code><br><code>a == [2, 7]</code></td>
-                        </tr>
-                        <tr style="height: 54px;">
-                            <td style="width: 19.011%; height: 54px;">
-                                <code><strong>del</strong> a[start:stop:step]</code></td>
-                            <td style="width: 42.6684%; height: 54px;">Удалить из&nbsp;<code>a</code>&nbsp;все элементы,
-                                попавшие в срез</td>
-                            <td style="width: 38.3205%; height: 54px;">
-                                <code>a = [2, 3, 7]</code><br><code>del a[:2]</code><br><code>a == [7]</code></td>
-                        </tr>
-                        <tr style="height: 36px;">
-                            <td style="width: 19.011%; height: 36px;"><code>a.clear()</code></td>
-                            <td style="width: 42.6684%; height: 36px;">Удалить из&nbsp;<code>a</code>&nbsp;все элементы
-                                (то же, что&nbsp;<code>del a[:]</code>)</td>
-                            <td style="width: 38.3205%; height: 36px;"><code>a.clear()</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a.copy()</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Копия&nbsp;<var>a</var>&nbsp;(то же, что и полный
-                                срез <code>a[:]</code>)</td>
-                            <td style="width: 38.3205%; height: 18px;"><code>b = a.copy()</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a += a2</code><br><code>a *= k</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Заменить содержимое списка на
-                                <code>a + a2</code><br>и&nbsp;<code>a * k</code>&nbsp;соответственно</td>
-                            <td style="width: 38.3205%; height: 18px;">&nbsp;</td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a.insert(n, x)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">
-                                Вставить&nbsp;<code>x</code>&nbsp;в&nbsp;<code>a</code>&nbsp;на
-                                позицию&nbsp;<code>n</code>, подвинув последующую часть дальше</td>
-                            <td style="width: 38.3205%; height: 18px;">
-                                <code>a = [2, 3, 7]</code><br><code>a.insert(0, 8)</code><br><code>a == [8, 2, 3, 7]</code>
-                            </td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a.pop(n)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Получить <var>n</var>-й элемент списка и
-                                одновременно удалить его из списка.<br>Вызов метода без аргументов равносилен удалению
-                                последнего элемента:<br><code>a.pop() == a.pop(-1)</code></td>
-                            <td style="width: 38.3205%; height: 18px;">
-                                <code>a = [2, 3, 7]</code><br><code>a.pop(1) == 3</code><br><code>a == [2, 7]</code>
-                            </td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>a.remove(x)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Удалить первое
-                                вхождение&nbsp;<code>x</code>&nbsp;в&nbsp;<code>a</code>, в
-                                случае&nbsp;<code>x not in a</code>&nbsp;— ошибка</td>
-                            <td style="width: 38.3205%; height: 18px;">
-                                <code>a = [2, 3, 7]</code><br><code>a.remove(3)</code><br><code>a == [2, 7]</code></td>
-                        </tr>
-                        <tr style="height: 15px;">
-                            <td style="width: 19.011%; height: 15px;"><code>a.reverse()</code></td>
-                            <td style="width: 42.6684%; height: 15px;">Изменить порядок элементов
-                                в&nbsp;<code>a</code>&nbsp;на обратный (перевернуть список)</td>
-                            <td style="width: 38.3205%; height: 15px;">
-                                <code>a = [2, 3, 7]</code><br><code>a.reverse()</code><br><code>a == [7, 3, 2]</code>
-                            </td>
-                        </tr>
-                        <tr style="height: 57px;">
-                            <td style="width: 19.011%; height: 57px;"><code>a.sort()</code></td>
-                            <td style="width: 42.6684%; height: 57px;">Отсортировать список по возрастанию</td>
-                            <td style="width: 38.3205%; height: 57px;">
-                                <code>a = [3, 2, 7]</code><br><code>a.sort()</code><br><code>a == [2, 3, 7]</code></td>
-                        </tr>
-                        <tr style="height: 57px;">
-                            <td style="width: 19.011%; height: 57px;"><code>a.sort(reverse=<strong>True</strong>)</code>
-                            </td>
-                            <td style="width: 42.6684%; height: 57px;">Отсортировать список по убыванию</td>
-                            <td style="width: 38.3205%; height: 57px;">
-                                <code>a = [3, 2, 7]</code><br><code>a.sort(reverse = True)</code><br><code>a == [7, 3, 2]</code>
-                            </td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.011%; height: 18px;"><code>bool(a)</code></td>
-                            <td style="width: 42.6684%; height: 18px;">Один из способов проверить список на пустоту
-                                (возвращает&nbsp;<code>True</code>, если список
-                                непустой,<br>и&nbsp;<code>False</code>&nbsp;в противном случае)</td>
-                            <td style="width: 38.3205%; height: 18px;">&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </article>
-        <article id="pt2" align="center">
-            <h2>Методы строк</h2>
-            <div align="center">
-                <table style="border-collapse: collapse; width: 50%; height: 180px;" border="1" cellpadding="5px">
-                    <tbody>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;"><strong>Операция</strong></td>
-                            <td style="width: 38.1926%; height: 18px;"><strong>Описание</strong></td>
-                            <td style="width: 42.029%; height: 18px;"><strong>Пример</strong></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;"><code>s2 <strong>in</strong> s</code></td>
-                            <td style="width: 38.1926%; height: 18px;">Проверка, что
-                                подстрока&nbsp;<code>s2</code>&nbsp;содержится в&nbsp;<code>s</code></td>
-                            <td style="width: 42.029%; height: 18px;"><code>'m' in 'team'</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;"><code>s2 <strong>not in</strong> s</code></td>
-                            <td style="width: 38.1926%; height: 18px;">Проверка, что
-                                подстрока&nbsp;<code>s2</code>&nbsp;не содержится в&nbsp;<code>s</code><br>то же,
-                                что&nbsp;<code>not (s2 in s)</code></td>
-                            <td style="width: 42.029%; height: 18px;"><code>'I' not in 'team'</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;"><code>s + s2</code></td>
-                            <td style="width: 38.1926%; height: 18px;">Конкатенация (склейка) строк, то есть
-                                строка,<br>в которой сначала идут все символы из&nbsp;<code>s</code>,<br>а затем все
-                                символы из&nbsp;<code>s2</code></td>
-                            <td style="width: 42.029%; height: 18px;"><code>'tea' + 'm' == 'team'</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;"><code>s * k</code></td>
-                            <td style="width: 38.1926%; height: 18px;">Строка&nbsp;<code>s</code>,
-                                повторенная&nbsp;<code>k</code>&nbsp;раз</td>
-                            <td style="width: 42.029%; height: 18px;"><code>'ha' * 3 == 'hahaha'</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;"><code>s[n]</code></td>
-                            <td style="width: 38.1926%; height: 18px;"><var>n</var>-й элемент
-                                строки,<br>отрицательные&nbsp;<code>n</code>&nbsp;— для отсчета с конца</td>
-                            <td style="width: 42.029%; height: 18px;">
-                                <code>'team'[2] == 'a'</code><br><code>'team'[-1] == 'm'</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;"><code>s[start:stop:step]</code></td>
-                            <td style="width: 38.1926%; height: 18px;">Срез строки</td>
-                            <td style="width: 42.029%; height: 18px;"><code>'mama'[:2] == 'ma'</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;"><code>len(s)</code></td>
-                            <td style="width: 38.1926%; height: 18px;">Длина строки</td>
-                            <td style="width: 42.029%; height: 18px;"><code>len('abracadabra') == 11</code></td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;">
-                                <code>s.find(s2)&nbsp;</code><br><code>s.rfind(s2)</code></td>
-                            <td style="width: 38.1926%; height: 18px;">Индекс начала первого или последнего<br>вхождения
-                                подстроки&nbsp;<code>s2</code>&nbsp;в&nbsp;<code>s</code>&nbsp;(вернет -1,
-                                если&nbsp;<code>s2 not in s</code>)</td>
-                            <td style="width: 42.029%; height: 18px;">
-                                <code>s = 'abracadabra'</code><br><code>s.find('ab') == 0</code><br><code>s.rfind('ab') == 7</code><br><code>s.find('x') == -1</code>
-                            </td>
-                        </tr>
-                        <tr style="height: 18px;">
-                            <td style="width: 19.7783%; height: 18px;"><code>s.count(s2)</code></td>
-                            <td style="width: 38.1926%; height: 18px;">Количество неперекрывающихся
-                                вхождений&nbsp;<code>s2</code>&nbsp;в&nbsp;<code>s</code></td>
-                            <td style="width: 42.029%; height: 18px;"><code>'abracadabra'.count('a') == 5</code></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;">
-                                <code>s.startswith(s2)&nbsp;</code><br><code>s.endswith(s2)</code></td>
-                            <td style="width: 38.1926%;">Проверка, что&nbsp;<code>s</code>&nbsp;начинается
-                                с&nbsp;<code>s2</code>&nbsp;или оканчивается на&nbsp;<code>s2</code></td>
-                            <td style="width: 42.029%;"><code>'abracadabra'.startswith('abra')</code></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>s += s2&nbsp;</code><br><code>s *= k</code></td>
-                            <td style="width: 38.1926%;">Заменить содержимое строки
-                                на<br><code>s + s2</code>&nbsp;и&nbsp;<code>s * k</code> соответственно</td>
-                            <td style="width: 42.029%;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;">
-                                <code>s.isdigit()&nbsp;</code><br><code>s.isalpha()&nbsp;</code><br><code>s.isalnum()</code>
-                            </td>
-                            <td style="width: 38.1926%;">Проверка, что в строке&nbsp;<code>s</code>&nbsp;все символы —
-                                цифры,<br>буквы (включая кириллические),<br>цифры или буквы соответственно</td>
-                            <td style="width: 42.029%;">
-                                <code>'100'.isdigit()</code><br><code>'abc'.isalpha()</code><br><code>'E315'.isalnum()</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>s.islower() &nbsp;</code><br><code>s.isupper()</code>
-                            </td>
-                            <td style="width: 38.1926%;">Проверка, что в&nbsp;строке
-                                <var>s</var>&nbsp;не&nbsp;встречаются большие буквы, маленькие буквы. <br>Обратите
-                                внимание, что для обеих этих функций знаки препинания и&nbsp;цифры дают True</td>
-                            <td style="width: 42.029%;">
-                                <code>'hello!'.islower()</code><br><code>'123PYTHON'.isupper()</code></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>s.lower()&nbsp;</code><br><code>s.upper()</code></td>
-                            <td style="width: 38.1926%;">Строка&nbsp;<code>s</code>, в которой все буквы (включая
-                                кириллические)<br>приведены к верхнему или нижнему регистру,<br>т.&nbsp;е. заменены на
-                                строчные (маленькие) или заглавные (большие)</td>
-                            <td style="width: 42.029%;">
-                                <code>'Привет!'.lower() == 'привет!'</code><br><code>'Привет!'.upper() == 'ПРИВЕТ!'</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>s.capitalize()</code></td>
-                            <td style="width: 38.1926%;">Строка&nbsp;<var>s</var>, в&nbsp;которой первая буква&nbsp;—
-                                заглавная</td>
-                            <td style="width: 42.029%;"><code>'привет'.capitalize() == 'Привет'</code></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;">
-                                <code>s.lstrip()&nbsp;</code><br><code>s.rstrip()&nbsp;</code><br><code>s.strip()</code>
-                            </td>
-                            <td style="width: 38.1926%;">Строка&nbsp;<code>s</code>, у которой удалены символы пустого
-                                пространства<br>(пробелы, табуляции) в начале,<br>в конце или с обеих сторон</td>
-                            <td style="width: 42.029%;"><code>' Привет! '.strip() == 'Привет!'</code></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>s.ljust(k, c)&nbsp;</code><br><code>s.rjust(k, c)</code>
-                            </td>
-                            <td style="width: 38.1926%;">Добавляет справа или слева нужное
-                                количество<br>символов&nbsp;<code>c</code>, чтобы
-                                длина&nbsp;<code>s</code>&nbsp;достигла&nbsp;<code>k</code></td>
-                            <td style="width: 42.029%;"><code>'Привет'.ljust(8, '!') == 'Привет!!</code><code>'</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>s.join(a)</code></td>
-                            <td style="width: 38.1926%;">Склеивает строки из списка&nbsp;<code>a</code>&nbsp;через
-                                символ&nbsp;<code>s</code></td>
-                            <td style="width: 42.029%;"><code>'+'.join(['Вася', 'Маша']) == 'Вася+Маша'</code></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>s.split(s2)</code></td>
-                            <td style="width: 38.1926%;">Список всех слов строки&nbsp;<code>s</code><br>(подстрок,
-                                разделенных строками&nbsp;<code>s2</code>)</td>
-                            <td style="width: 42.029%;">
-                                <code>'Раз два три!'.split('а') ==</code><br><code>['Р', 'з дв', ' три!']</code></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>s.replace(s2, s3)</code></td>
-                            <td style="width: 38.1926%;">Cтрока&nbsp;<code>s</code>, в которой все
-                                неперекрывающиеся<br>вхождения&nbsp;<code>s2</code>&nbsp;заменены
-                                на&nbsp;<code>s3</code><br>Есть необязательный третий параметр, с&nbsp;помощью которого
-                                можно указать, сколько раз производить замену</td>
-                            <td style="width: 42.029%;">
-                                <code>'Раз два три!'.replace('а', 'я') ==</code><code>'Ряз двя три!'</code><br><code>'Раз два три!'.replace('а', 'я', 1) == 'Ряз два три!'</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>list(s)</code></td>
-                            <td style="width: 38.1926%;">Список символов из строки строки&nbsp;<code>s</code></td>
-                            <td style="width: 42.029%;">
-                                <code>list('Привет') ==</code><br><code>['П', 'р', 'и', 'в', 'е', 'т']</code></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>bool(s)</code></td>
-                            <td style="width: 38.1926%;">Проверка, что строка не пустая
-                                (возвращает&nbsp;<code>True</code>, если не пустая, и&nbsp;<code>False</code>&nbsp;в
-                                противном случае)</td>
-                            <td style="width: 42.029%;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>int(s)&nbsp;</code><br><code>float(s)</code></td>
-                            <td style="width: 38.1926%;">Если в строке&nbsp;<code>s</code>&nbsp;записано целое (дробное)
-                                число,<br>получить это число, иначе — ошибка</td>
-                            <td style="width: 42.029%;"><code>int('25') == 25</code></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 19.7783%;"><code>str(x)</code></td>
-                            <td style="width: 38.1926%;">Представить любой объект&nbsp;<code>x</code>&nbsp;в виде строки
-                            </td>
-                            <td style="width: 42.029%;"><code>str(25) == '25'</code></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p><strong>Важно!</strong></p>
-            <p>Обратите внимание: <strong>никакие</strong> методы строк, включая <code>s.replace(...)</code>,
-                не&nbsp;изменяют саму строку&nbsp;<var>s</var>. Все они лишь <strong>возвращают измененную
-                    строку</strong>, в&nbsp;отличие от&nbsp;большинства методов списков.</p>
-            <p><code>a.sort()</code>, например, ничего не&nbsp;возвращает, а&nbsp;изменяет сам список&nbsp;<var>a</var>.
-            </p>
-        </article>
-        <article id="pt3">
-            <h2 align="center">Карточка pdf</h2>
-            <p align="center" style="font-size: 25px;">Если pdf файл не загружается, то можете открыть <a href="images/card.jpg">jpg версию</a></p>
-            <embed src="abregepython-english.pdf" width="100%" height="1080" type='application/pdf'>
-        </article>
+        <div class="tabs" align="center">
 
+            <input type="radio" name="inset" value="" id="tab_1" checked>
+            <label for="tab_1">Python</label>
 
+            <input type="radio" name="inset" value="" id="tab_2">
+            <label for="tab_2">HTML</label>
+
+            <input type="radio" name="inset" value="" id="tab_3">
+            <label for="tab_3">CSS</label>
+
+            <div id="txt_1">
+                <h2 align="center">Python</h2>
+                <section align="center">
+                    <ul>
+                        <li>
+                            <a href="#pt1">Методы списков</a>
+                        </li>
+                        <li>
+                            <a href="#pt2">Методы строк</a>
+                        </li>
+                        <li>
+                            <a href="#pt3">Карточка pdf</a>
+                        </li>
+                    </ul>
+                </section>
+                <article id="pt1" align="center">
+                    <h2>Методы списков</h2>
+                    <div align="center">
+                        <table style="border-collapse: collapse; width: 50%; height: 674px;" border="1"
+                            cellpadding="5px">
+                            <tbody>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><strong>Операция</strong></td>
+                                    <td style="width: 42.6684%; height: 18px;"><strong>Описание</strong></td>
+                                    <td style="width: 38.3205%; height: 18px;"><strong>Пример</strong></td>
+                                </tr>
+                                <tr style="height: 19px;">
+                                    <td style="width: 19.011%; height: 19px;"><code>x <strong>in</strong> a</code></td>
+                                    <td style="width: 42.6684%; height: 19px;">Проверка, что <code>x</code> содержится в
+                                        <code>а</code></td>
+                                    <td style="width: 38.3205%; height: 19px;"><code>5 in [2, 3, 5]</code></td>
+                                </tr>
+                                <tr style="height: 38px;">
+                                    <td style="width: 19.011%; height: 38px;"><code>x <strong>not in</strong> a</code>
+                                    </td>
+                                    <td style="width: 42.6684%; height: 38px;">Проверка, что&nbsp;<code>x</code>&nbsp;не
+                                        содержится в&nbsp;<code>а</code><br>То же, что и&nbsp;<code>not (x in a)</code>
+                                    </td>
+                                    <td style="width: 38.3205%; height: 38px;"><code>5 not in [2, 3, 6]</code></td>
+                                </tr>
+                                <tr style="height: 19px;">
+                                    <td style="width: 19.011%; height: 19px;"><code>a + a2</code></td>
+                                    <td style="width: 42.6684%; height: 19px;">Конкатенация списков, то есть новый
+                                        список, в
+                                        котором сначала идут все элементы&nbsp;<code>a</code>,<br>а затем все
+                                        элементы&nbsp;<code>a2</code></td>
+                                    <td style="width: 38.3205%; height: 19px;">
+                                        <code>[2, 4] + [5, 3] == [2, 4, 5, 3]</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a * k</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Список&nbsp;<code>a</code>,
+                                        повторенный&nbsp;<code>k</code>&nbsp;раз</td>
+                                    <td style="width: 38.3205%; height: 18px;">
+                                        <code>[2, 3] * 3 == [2, 3, 2, 3, 2, 3]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a[n]</code></td>
+                                    <td style="width: 42.6684%; height: 18px;"><code>n</code>-й элемент
+                                        списка,<br>отрицательные&nbsp;<code>n</code>&nbsp;— для отсчета с конца</td>
+                                    <td style="width: 38.3205%; height: 18px;">
+                                        <code>[2, 3, 7][0] == 2</code><br><code>[2, 3, 7][-1] == 7</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a[start:stop:step]</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Срез списка</td>
+                                    <td style="width: 38.3205%; height: 18px;"><code>[2, 3, 7][:2] == [2, 3]</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>len(a)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Длина списка</td>
+                                    <td style="width: 38.3205%; height: 18px;"><code>len([2, 3, 7]) == 3</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>max(a)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Максимальный элемент списка</td>
+                                    <td style="width: 38.3205%; height: 18px;"><code>max([2, 3, 7]) == 7</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>min(a)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Минимальный элемент списка</td>
+                                    <td style="width: 38.3205%; height: 18px;"><code>min([2, 3, 7]) == 2</code></td>
+                                </tr>
+                                <tr style="height: 19px;">
+                                    <td style="width: 19.011%; height: 19px;"><code>sum(a)</code></td>
+                                    <td style="width: 42.6684%; height: 19px;">Сумма элементов списка</td>
+                                    <td style="width: 38.3205%; height: 19px;"><code>sum([2, 3, 7]) == 12</code></td>
+                                </tr>
+                                <tr style="height: 54px;">
+                                    <td style="width: 19.011%; height: 54px;"><code>a.index(x)</code></td>
+                                    <td style="width: 42.6684%; height: 54px;">Индекс первого
+                                        вхождения&nbsp;<code>x</code>&nbsp;в&nbsp;<code>a</code><br>(вызовет ошибку,
+                                        если&nbsp;<code>x not in a</code>, то есть
+                                        если&nbsp;<code>х</code>&nbsp;отсутствует
+                                        в&nbsp;<code>а</code>)</td>
+                                    <td style="width: 38.3205%; height: 54px;"><code>[2, 3, 7].index(7) == 2</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a.count(x)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Количество
+                                        вхождений&nbsp;<code>x</code>&nbsp;в&nbsp;<code>a</code></td>
+                                    <td style="width: 38.3205%; height: 18px;"><code>[2, 7, 3, 7].count(7) == 2</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a.append(x)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Добавить&nbsp;<var>x</var>&nbsp;в
+                                        конец&nbsp;<var>a</var></td>
+                                    <td style="width: 38.3205%; height: 18px;">
+                                        <code>a = [2, 3, 7]</code><br><code>a.append(8)</code><br><code>a == [2, 3, 7, 8]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a.extend(a2)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Добавить элементы коллекции
+                                        <var>a2</var>&nbsp;в
+                                        конец&nbsp;<var>a</var></td>
+                                    <td style="width: 38.3205%; height: 18px;">
+                                        <code>a = [2, 3, 7]</code><br><code>a.extend([8, 4, 5])</code><br><code>a == [2, 3, 7, 8, 4, 5]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code><strong>del</strong> a[n]</code>
+                                    </td>
+                                    <td style="width: 42.6684%; height: 18px;">Удалить <var>n</var>-й элемент списка
+                                    </td>
+                                    <td style="width: 38.3205%; height: 18px;">
+                                        <code>a = [2, 3, 7]</code><br><code>del a[1]</code><br><code>a == [2, 7]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 54px;">
+                                    <td style="width: 19.011%; height: 54px;">
+                                        <code><strong>del</strong> a[start:stop:step]</code></td>
+                                    <td style="width: 42.6684%; height: 54px;">Удалить из&nbsp;<code>a</code>&nbsp;все
+                                        элементы,
+                                        попавшие в срез</td>
+                                    <td style="width: 38.3205%; height: 54px;">
+                                        <code>a = [2, 3, 7]</code><br><code>del a[:2]</code><br><code>a == [7]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 36px;">
+                                    <td style="width: 19.011%; height: 36px;"><code>a.clear()</code></td>
+                                    <td style="width: 42.6684%; height: 36px;">Удалить из&nbsp;<code>a</code>&nbsp;все
+                                        элементы
+                                        (то же, что&nbsp;<code>del a[:]</code>)</td>
+                                    <td style="width: 38.3205%; height: 36px;"><code>a.clear()</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a.copy()</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Копия&nbsp;<var>a</var>&nbsp;(то же, что
+                                        и полный
+                                        срез <code>a[:]</code>)</td>
+                                    <td style="width: 38.3205%; height: 18px;"><code>b = a.copy()</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;">
+                                        <code>a += a2</code><br><code>a *= k</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Заменить содержимое списка на
+                                        <code>a + a2</code><br>и&nbsp;<code>a * k</code>&nbsp;соответственно</td>
+                                    <td style="width: 38.3205%; height: 18px;">&nbsp;</td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a.insert(n, x)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">
+                                        Вставить&nbsp;<code>x</code>&nbsp;в&nbsp;<code>a</code>&nbsp;на
+                                        позицию&nbsp;<code>n</code>, подвинув последующую часть дальше</td>
+                                    <td style="width: 38.3205%; height: 18px;">
+                                        <code>a = [2, 3, 7]</code><br><code>a.insert(0, 8)</code><br><code>a == [8, 2, 3, 7]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a.pop(n)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Получить <var>n</var>-й элемент списка и
+                                        одновременно удалить его из списка.<br>Вызов метода без аргументов равносилен
+                                        удалению
+                                        последнего элемента:<br><code>a.pop() == a.pop(-1)</code></td>
+                                    <td style="width: 38.3205%; height: 18px;">
+                                        <code>a = [2, 3, 7]</code><br><code>a.pop(1) == 3</code><br><code>a == [2, 7]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>a.remove(x)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Удалить первое
+                                        вхождение&nbsp;<code>x</code>&nbsp;в&nbsp;<code>a</code>, в
+                                        случае&nbsp;<code>x not in a</code>&nbsp;— ошибка</td>
+                                    <td style="width: 38.3205%; height: 18px;">
+                                        <code>a = [2, 3, 7]</code><br><code>a.remove(3)</code><br><code>a == [2, 7]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 15px;">
+                                    <td style="width: 19.011%; height: 15px;"><code>a.reverse()</code></td>
+                                    <td style="width: 42.6684%; height: 15px;">Изменить порядок элементов
+                                        в&nbsp;<code>a</code>&nbsp;на обратный (перевернуть список)</td>
+                                    <td style="width: 38.3205%; height: 15px;">
+                                        <code>a = [2, 3, 7]</code><br><code>a.reverse()</code><br><code>a == [7, 3, 2]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 57px;">
+                                    <td style="width: 19.011%; height: 57px;"><code>a.sort()</code></td>
+                                    <td style="width: 42.6684%; height: 57px;">Отсортировать список по возрастанию</td>
+                                    <td style="width: 38.3205%; height: 57px;">
+                                        <code>a = [3, 2, 7]</code><br><code>a.sort()</code><br><code>a == [2, 3, 7]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 57px;">
+                                    <td style="width: 19.011%; height: 57px;">
+                                        <code>a.sort(reverse=<strong>True</strong>)</code>
+                                    </td>
+                                    <td style="width: 42.6684%; height: 57px;">Отсортировать список по убыванию</td>
+                                    <td style="width: 38.3205%; height: 57px;">
+                                        <code>a = [3, 2, 7]</code><br><code>a.sort(reverse = True)</code><br><code>a == [7, 3, 2]</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.011%; height: 18px;"><code>bool(a)</code></td>
+                                    <td style="width: 42.6684%; height: 18px;">Один из способов проверить список на
+                                        пустоту
+                                        (возвращает&nbsp;<code>True</code>, если список
+                                        непустой,<br>и&nbsp;<code>False</code>&nbsp;в противном случае)</td>
+                                    <td style="width: 38.3205%; height: 18px;">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                <article id="pt2" align="center">
+                    <h2>Методы строк</h2>
+                    <div align="center">
+                        <table style="border-collapse: collapse; width: 50%; height: 180px;" border="1"
+                            cellpadding="5px">
+                            <tbody>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;"><strong>Операция</strong></td>
+                                    <td style="width: 38.1926%; height: 18px;"><strong>Описание</strong></td>
+                                    <td style="width: 42.029%; height: 18px;"><strong>Пример</strong></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;"><code>s2 <strong>in</strong> s</code>
+                                    </td>
+                                    <td style="width: 38.1926%; height: 18px;">Проверка, что
+                                        подстрока&nbsp;<code>s2</code>&nbsp;содержится в&nbsp;<code>s</code></td>
+                                    <td style="width: 42.029%; height: 18px;"><code>'m' in 'team'</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;"><code>s2 <strong>not in</strong> s</code>
+                                    </td>
+                                    <td style="width: 38.1926%; height: 18px;">Проверка, что
+                                        подстрока&nbsp;<code>s2</code>&nbsp;не содержится в&nbsp;<code>s</code><br>то
+                                        же,
+                                        что&nbsp;<code>not (s2 in s)</code></td>
+                                    <td style="width: 42.029%; height: 18px;"><code>'I' not in 'team'</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;"><code>s + s2</code></td>
+                                    <td style="width: 38.1926%; height: 18px;">Конкатенация (склейка) строк, то есть
+                                        строка,<br>в которой сначала идут все символы из&nbsp;<code>s</code>,<br>а затем
+                                        все
+                                        символы из&nbsp;<code>s2</code></td>
+                                    <td style="width: 42.029%; height: 18px;"><code>'tea' + 'm' == 'team'</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;"><code>s * k</code></td>
+                                    <td style="width: 38.1926%; height: 18px;">Строка&nbsp;<code>s</code>,
+                                        повторенная&nbsp;<code>k</code>&nbsp;раз</td>
+                                    <td style="width: 42.029%; height: 18px;"><code>'ha' * 3 == 'hahaha'</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;"><code>s[n]</code></td>
+                                    <td style="width: 38.1926%; height: 18px;"><var>n</var>-й элемент
+                                        строки,<br>отрицательные&nbsp;<code>n</code>&nbsp;— для отсчета с конца</td>
+                                    <td style="width: 42.029%; height: 18px;">
+                                        <code>'team'[2] == 'a'</code><br><code>'team'[-1] == 'm'</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;"><code>s[start:stop:step]</code></td>
+                                    <td style="width: 38.1926%; height: 18px;">Срез строки</td>
+                                    <td style="width: 42.029%; height: 18px;"><code>'mama'[:2] == 'ma'</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;"><code>len(s)</code></td>
+                                    <td style="width: 38.1926%; height: 18px;">Длина строки</td>
+                                    <td style="width: 42.029%; height: 18px;"><code>len('abracadabra') == 11</code></td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;">
+                                        <code>s.find(s2)&nbsp;</code><br><code>s.rfind(s2)</code></td>
+                                    <td style="width: 38.1926%; height: 18px;">Индекс начала первого или
+                                        последнего<br>вхождения
+                                        подстроки&nbsp;<code>s2</code>&nbsp;в&nbsp;<code>s</code>&nbsp;(вернет -1,
+                                        если&nbsp;<code>s2 not in s</code>)</td>
+                                    <td style="width: 42.029%; height: 18px;">
+                                        <code>s = 'abracadabra'</code><br><code>s.find('ab') == 0</code><br><code>s.rfind('ab') == 7</code><br><code>s.find('x') == -1</code>
+                                    </td>
+                                </tr>
+                                <tr style="height: 18px;">
+                                    <td style="width: 19.7783%; height: 18px;"><code>s.count(s2)</code></td>
+                                    <td style="width: 38.1926%; height: 18px;">Количество неперекрывающихся
+                                        вхождений&nbsp;<code>s2</code>&nbsp;в&nbsp;<code>s</code></td>
+                                    <td style="width: 42.029%; height: 18px;"><code>'abracadabra'.count('a') == 5</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;">
+                                        <code>s.startswith(s2)&nbsp;</code><br><code>s.endswith(s2)</code></td>
+                                    <td style="width: 38.1926%;">Проверка, что&nbsp;<code>s</code>&nbsp;начинается
+                                        с&nbsp;<code>s2</code>&nbsp;или оканчивается на&nbsp;<code>s2</code></td>
+                                    <td style="width: 42.029%;"><code>'abracadabra'.startswith('abra')</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>s += s2&nbsp;</code><br><code>s *= k</code></td>
+                                    <td style="width: 38.1926%;">Заменить содержимое строки
+                                        на<br><code>s + s2</code>&nbsp;и&nbsp;<code>s * k</code> соответственно</td>
+                                    <td style="width: 42.029%;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;">
+                                        <code>s.isdigit()&nbsp;</code><br><code>s.isalpha()&nbsp;</code><br><code>s.isalnum()</code>
+                                    </td>
+                                    <td style="width: 38.1926%;">Проверка, что в строке&nbsp;<code>s</code>&nbsp;все
+                                        символы —
+                                        цифры,<br>буквы (включая кириллические),<br>цифры или буквы соответственно</td>
+                                    <td style="width: 42.029%;">
+                                        <code>'100'.isdigit()</code><br><code>'abc'.isalpha()</code><br><code>'E315'.isalnum()</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;">
+                                        <code>s.islower() &nbsp;</code><br><code>s.isupper()</code>
+                                    </td>
+                                    <td style="width: 38.1926%;">Проверка, что в&nbsp;строке
+                                        <var>s</var>&nbsp;не&nbsp;встречаются большие буквы, маленькие буквы.
+                                        <br>Обратите
+                                        внимание, что для обеих этих функций знаки препинания и&nbsp;цифры дают True
+                                    </td>
+                                    <td style="width: 42.029%;">
+                                        <code>'hello!'.islower()</code><br><code>'123PYTHON'.isupper()</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>s.lower()&nbsp;</code><br><code>s.upper()</code>
+                                    </td>
+                                    <td style="width: 38.1926%;">Строка&nbsp;<code>s</code>, в которой все буквы
+                                        (включая
+                                        кириллические)<br>приведены к верхнему или нижнему регистру,<br>т.&nbsp;е.
+                                        заменены на
+                                        строчные (маленькие) или заглавные (большие)</td>
+                                    <td style="width: 42.029%;">
+                                        <code>'Привет!'.lower() == 'привет!'</code><br><code>'Привет!'.upper() == 'ПРИВЕТ!'</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>s.capitalize()</code></td>
+                                    <td style="width: 38.1926%;">Строка&nbsp;<var>s</var>, в&nbsp;которой первая
+                                        буква&nbsp;—
+                                        заглавная</td>
+                                    <td style="width: 42.029%;"><code>'привет'.capitalize() == 'Привет'</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;">
+                                        <code>s.lstrip()&nbsp;</code><br><code>s.rstrip()&nbsp;</code><br><code>s.strip()</code>
+                                    </td>
+                                    <td style="width: 38.1926%;">Строка&nbsp;<code>s</code>, у которой удалены символы
+                                        пустого
+                                        пространства<br>(пробелы, табуляции) в начале,<br>в конце или с обеих сторон
+                                    </td>
+                                    <td style="width: 42.029%;"><code>' Привет! '.strip() == 'Привет!'</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;">
+                                        <code>s.ljust(k, c)&nbsp;</code><br><code>s.rjust(k, c)</code>
+                                    </td>
+                                    <td style="width: 38.1926%;">Добавляет справа или слева нужное
+                                        количество<br>символов&nbsp;<code>c</code>, чтобы
+                                        длина&nbsp;<code>s</code>&nbsp;достигла&nbsp;<code>k</code></td>
+                                    <td style="width: 42.029%;">
+                                        <code>'Привет'.ljust(8, '!') == 'Привет!!</code><code>'</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>s.join(a)</code></td>
+                                    <td style="width: 38.1926%;">Склеивает строки из
+                                        списка&nbsp;<code>a</code>&nbsp;через
+                                        символ&nbsp;<code>s</code></td>
+                                    <td style="width: 42.029%;"><code>'+'.join(['Вася', 'Маша']) == 'Вася+Маша'</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>s.split(s2)</code></td>
+                                    <td style="width: 38.1926%;">Список всех слов
+                                        строки&nbsp;<code>s</code><br>(подстрок,
+                                        разделенных строками&nbsp;<code>s2</code>)</td>
+                                    <td style="width: 42.029%;">
+                                        <code>'Раз два три!'.split('а') ==</code><br><code>['Р', 'з дв', ' три!']</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>s.replace(s2, s3)</code></td>
+                                    <td style="width: 38.1926%;">Cтрока&nbsp;<code>s</code>, в которой все
+                                        неперекрывающиеся<br>вхождения&nbsp;<code>s2</code>&nbsp;заменены
+                                        на&nbsp;<code>s3</code><br>Есть необязательный третий параметр, с&nbsp;помощью
+                                        которого
+                                        можно указать, сколько раз производить замену</td>
+                                    <td style="width: 42.029%;">
+                                        <code>'Раз два три!'.replace('а', 'я') ==</code><code>'Ряз двя три!'</code><br><code>'Раз два три!'.replace('а', 'я', 1) == 'Ряз два три!'</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>list(s)</code></td>
+                                    <td style="width: 38.1926%;">Список символов из строки строки&nbsp;<code>s</code>
+                                    </td>
+                                    <td style="width: 42.029%;">
+                                        <code>list('Привет') ==</code><br><code>['П', 'р', 'и', 'в', 'е', 'т']</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>bool(s)</code></td>
+                                    <td style="width: 38.1926%;">Проверка, что строка не пустая
+                                        (возвращает&nbsp;<code>True</code>, если не пустая,
+                                        и&nbsp;<code>False</code>&nbsp;в
+                                        противном случае)</td>
+                                    <td style="width: 42.029%;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>int(s)&nbsp;</code><br><code>float(s)</code></td>
+                                    <td style="width: 38.1926%;">Если в строке&nbsp;<code>s</code>&nbsp;записано целое
+                                        (дробное)
+                                        число,<br>получить это число, иначе — ошибка</td>
+                                    <td style="width: 42.029%;"><code>int('25') == 25</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.7783%;"><code>str(x)</code></td>
+                                    <td style="width: 38.1926%;">Представить любой объект&nbsp;<code>x</code>&nbsp;в
+                                        виде строки
+                                    </td>
+                                    <td style="width: 42.029%;"><code>str(25) == '25'</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>Важно!</strong></p>
+                    <p>Обратите внимание: <strong>никакие</strong> методы строк, включая <code>s.replace(...)</code>,
+                        не&nbsp;изменяют саму строку&nbsp;<var>s</var>. Все они лишь <strong>возвращают измененную
+                            строку</strong>, в&nbsp;отличие от&nbsp;большинства методов списков.</p>
+                    <p><code>a.sort()</code>, например, ничего не&nbsp;возвращает, а&nbsp;изменяет сам
+                        список&nbsp;<var>a</var>.
+                    </p>
+                </article>
+                <article id="pt3">
+                    <h2 align="center">Карточка pdf</h2>
+                    <p align="center" style="font-size: 25px;">Если pdf файл не загружается, то можете открыть <a
+                            href="images/card.jpg">jpg версию</a></p>
+                    <embed src="abregepython-english.pdf" width="100%" height="1080" type='application/pdf'>
+                </article>
+            </div>
+
+            <div id="txt_2">
+                <div class="t2">
+                    <h2 align="center">HTML</h2>
+                    <section align="center">
+                        <ul>
+                            <li>
+                                <a href="#pt1.2">Базовые теги</a>
+                            </li>
+                            <li>
+                                <a href="#pt2.2">Форматирование текста</a>
+                            </li>
+                            <li>
+                                <a href="#pt3.2">Встраивание элементов</a>
+                            </li>
+                            <li>
+                                <a href="#pt4.2">Работа с таблицами</a>
+                            </li>
+                            <li>
+                                <a href="#pt5.2">Создание форм и кнопок</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <h2 id="pt1.2">Базовые теги</h2>
+
+                    <p>&lt;!--...--&gt; — тег для добавления комментариев в документ. Помещённые внутри него теги не
+                        интерпретируются браузером.</p>
+
+                    <p>&lt;!DOCTYPE&gt; — показывает браузеру тип документа, сообщает его версию и язык.<br>
+                        <br>
+                        &lt;html&gt;&lt;/html&gt; — корневой тег, который сообщает браузеру, что это HTML-документ. Все
+                        остальные элементы помещаются внутри него.</p>
+
+                    <p>&lt;head&gt;&lt;/head&gt;— контейнер, в который помещаются метаданные документа, не видимые
+                        пользователям, но считываемые поисковыми роботами: например, &lt;title&gt; или
+                        &lt;style&gt;.<br>
+                        <br>
+                        &lt;meta&gt; — тег для оформления метаданных документа, используемых браузером для обработки
+                        страницы, а поисковиками — для индексации.</p>
+
+                    <p>&lt;body&gt;&lt;/body&gt; — тег, обрамляющий видимую пользователям часть документа. Всё, что вы
+                        укажите внутри этого контейнера, отобразится на странице. Тег &lt;body&gt; имеет несколько
+                        атрибутов, позволяющих управлять цветами.</p>
+
+                    <p>&lt;body bgcolor=?&gt; — цвет фона документа в формате RGB.</p>
+
+                    <p>&lt;body text=?&gt; — цвет текста.</p>
+
+                    <p>&lt;body link=?&gt; — цвет гиперссылок.</p>
+
+                    <p>&lt;body vlink=?&gt; — цвет гиперссылок, по которым уже переходили.</p>
+
+                    <p>&lt;body alink=?&gt; — цвет гиперссылок при нажатии.</p>
+
+                    <p>&lt;title&gt;&lt;/title&gt;— метатег, который задаёт название страницы, отображаемое на вкладке
+                        браузера.<br>
+                        <br>
+                        &lt;header&gt;&lt;/header&gt; — определяет содержимое блока с вводной информацией сайта или
+                        группой ссылок.</p>
+
+                    <p>&nbsp;</p>
+
+                    <h2 id="pt2.2">Форматирование текста</h2>
+
+                    <p>&lt;h1&gt;&lt;/h1&gt;......&lt;h6&gt;&lt;/h6&gt;. — теги заголовков, от самого большого к самому
+                        маленькому.</p>
+
+                    <p>&lt;b&gt;&lt;/b&gt; — жирный текст без придания важности выделенному фрагменту.</p>
+
+                    <p>&lt;strong&gt;&lt;/strong&gt; — расставление акцентов в тексте путём выделения его фрагментов
+                        полужирным начертанием.</p>
+
+                    <p>&lt;i&gt;&lt;/i&gt; — выделение текста курсивом без придания важности.<br>
+                        <br>
+                        &lt;del&gt;&lt;/del&gt; — зачёркивает текст, помечая его удалённым.<br>
+                        <br>
+                        &lt;s&gt;&lt;/s&gt; — отображает перечёркнутый текст.<br>
+                        <br>
+                        &lt;ins&gt;&lt;/ins&gt; — подчёркивает текст, визуально выделяя внесённые изменения.<br>
+                        <br>
+                        &lt;u&gt; — подчёркивание без дополнительного акцентирования внимания.</p>
+
+                    <p>&lt;em&gt;&lt;/em&gt; — расставление акцентов путём выделения фрагментов текста курсивом.</p>
+
+                    <p>&lt;mark&gt;&lt;/mark&gt; — выделение частей текста жёлтым маркером.</p>
+
+                    <p>&lt;tt&gt;&lt;/tt&gt; — имитация текста, набранного на печатной машинке.<br>
+                        <br>
+                        &lt;small&gt;&lt;/small&gt; — отображение фрагмента с меньшим кеглем шрифта, чем у остального
+                        текста.<br>
+                        <br>
+                        &lt;sub&gt;&lt;/sub&gt; — подстрочное начертание символов.</p>
+
+                    <p>&lt;sup&gt;&lt;/sup&gt; — надстрочное начертание символов.</p>
+
+                    <p>&lt;cite&gt;&lt;/cite&gt; — оформление цитат.</p>
+
+                    <p>&lt;address&gt; — добавление контактов или подписи автора. При открытии в вею-браузере выделяется
+                        курсивом.</p>
+
+                    <p>&lt;pre&gt;&lt;/pre&gt; — вывод неформатированного текста с сохранением пробелов и особенностей
+                        переносов.</p>
+
+                    <p>&lt;p&gt;&lt;/p&gt; — контейнер для абзаца.</p>
+
+                    <p>&lt;br&gt; — переносит текст на другую строку без создания абзаца.</p>
+
+                    <p>&lt;blockquote&gt; &lt;/blockquote&gt; — отступы с обеих сторон для оформления цитаты или
+                        врезки.<br>
+                        <br>
+                        &lt;q&gt;&lt;/q&gt; — краткое цитирование.</p>
+
+                    <p>&lt;dl&gt;&lt;/dl&gt; — контейнер для размещения термина и его определения.</p>
+
+                    <p>&lt;dt&gt; — добавление термина.</p>
+
+                    <p>&lt;dd&gt; — добавление определения понятия<br>
+                        <br>
+                        &lt;dfn&gt; — выделение термина курсивом. Последующий текст должен раскрывать понятие.</p>
+
+                    <p>&lt;abbr&gt; — указывает, что текст является аббревиатурой или акронимом. Для добавления
+                        пояснения используется атрибут title.</p>
+
+                    <p>&lt;ol&gt;&lt;/ol&gt; — список с цифрами.</p>
+
+                    <p>&lt;ul&gt;&lt;/ul&gt; — список со значками.</p>
+
+                    <p>&lt;li&gt; — отметка каждого элемента перечня (цифра или значок в зависимости от типа списка).
+                    </p>
+
+                    <p>&lt;a&gt;&lt;/a&gt; — добавление гиперссылки в текст. Имеет обязательный атрибут href, в котором
+                        указывается ссылка или якорь. Внутри контейнера помещается текст, при нажатии на который
+                        происходит переход на другую страницу или другое место на этой же странице.<br>
+                        <br>
+                        &lt;code&gt;&lt;/code&gt; — выделение фрагмента кода с помощью шрифта monospace.&nbsp;</p>
+
+                    <p>&nbsp;</p>
+
+                    <h2 id="pt3.2">Встраивание элементов</h2>
+
+                    <p>&lt;img&gt;&lt;/img&gt; — вставка изображения. Имеет атрибут src, который указывает на адрес
+                        нужного файла. Есть и другие атрибуты:</p>
+
+                    <p>&lt;img src="name" align=?&gt; — выравнивание к одной из сторон документа. Например, значение
+                        right переместит рисунок в правый край, а left — в левый.</p>
+
+                    <p>&lt;img src="name" border=?&gt; — позволяет настроить в пикселях толщину рамки вокруг
+                        изображения.<br>
+                        <br>
+                        &lt;picture&gt;&lt;/picture&gt; — контейнер для расположения элемента &lt;img&gt; без
+                        &lt;source&gt;, который даёт браузеру возможность самостоятельно выбрать подходящую картинку.
+                    </p>
+
+                    <p>&lt;audio&gt;&lt;/audio&gt; &nbsp;— вставка звукового контента.</p>
+
+                    <p>&lt;video&gt;&lt;/video&gt; — вставка видео (поддерживается Ogg, WebM и MP4).<br>
+                        <br>
+                        &lt;source&gt;&lt;/source&gt; — указывает местоположение файла для &lt;video&gt;, &lt;audio&gt;
+                        и &lt;picture&gt;<br>
+                        <br>
+                        &lt;track&gt; — формирует субтитры для &lt;video&gt; и &lt;audio&gt;.</p>
+
+                    <p>&lt;object&gt;&lt;/object&gt; — контейнер, через который встраиваются мультимедийные файлы. Для
+                        передачи параметров применяется тег &lt;param&gt;.<br>
+                        <br>
+                        &lt;hr&gt; — размещает на странице горизонтальную линию. Имеет несколько атрибутов.</p>
+
+                    <p>&lt;hr size=?&gt; — устанавливает высоту линии.</p>
+
+                    <p>&lt;hr width=?&gt; — устанавливает ширину линии.</p>
+
+                    <p>&lt;hr noshade&gt; — убирает тень у линии.</p>
+
+                    <p>&lt;hr color=?&gt; — задаёт цвет линии.<br>
+                        <br>
+                        &lt;script&gt;&lt;/script&gt; — определяет выполнение сценария на стороне посетителя сайта.
+                        Может содержать сам скрипт или иметь ссылку на &nbsp;внешний источник.<br>
+                        <br>
+                        &lt;noscript&gt;&lt;/noscript&gt; — ограничивает фрагмент документа, в котором скрипт не
+                        выполняется.</p>
+
+                    <p>&nbsp;</p>
+
+                    <h2 id="pt4.2">Работа с таблицами</h2>
+
+                    <p>&lt;table&gt;&lt;/table&gt; — размещает таблицу. Все остальные теги для форматирования таблиц
+                        должны находиться внутри это контейнера.<br>
+                        <br>
+                        &lt;thead&gt;&lt;/thead&gt; — определяет заголовок.<br>
+                        <br>
+                        &lt;tbody&gt;&lt;/tbody&gt; — отмечает тело таблицы.</p>
+
+                    <p>&lt;td&gt;&lt;/td&gt; — создаёт одну ячейку.<br>
+                        <br>
+                        &lt;th&gt;&lt;/th&gt; — указывает на заголовок ячейки.<br>
+                        <br>
+                        &lt;tr&gt; — создание одной строки. &nbsp;<br>
+                        <br>
+                        &lt;tfoot&gt;&lt;/tfoot&gt; — показывает нижний колонтитул.</p>
+
+                    <p>&lt;caption&gt;&lt;/caption&gt; — вставляет подпись. Указывается после тега &lt;table&gt;.</p>
+
+                    <p>&lt;col&gt; — позволяет указать ширину и другие параметры одной или нескольких колонок.</p>
+
+                    <p>&nbsp;</p>
+
+                    <h2 id="pt5.2">Создание форм и кнопок</h2>
+
+                    <p>&lt;form&gt;&lt;/form&gt; — создание форм на странице. С помощью HTML описывается только внешний
+                        вид, для выполнения функций требуется запуск соответствующих скриптов на сервере.<br>
+                        &nbsp;</p>
+
+                    <p>&lt;button&gt;&lt;/button&gt; — создаёт интерактивную кнопку. Внутри контейнера нужно поместить
+                        текст или изображение.<br>
+                        <br>
+                        &lt;select multiple name="NAME" size=?&gt;&lt;/select&gt; — формирует меню с поддержкой
+                        скроллинга.<br>
+                        <br>
+                        &lt;select name="NAME"&gt;&lt;/select&gt; — создаёт ниспадающее меню.</p>
+
+                    <p>&lt;option&gt;&lt;/option&gt; — описывает каждый отдельный пункт меню.<br>
+                        <br>
+                        &lt;input&gt; — формирует поля для добавления пользовательских данных.<br>
+                        <br>
+                        &lt;output&gt; — выводит результаты вычислений, сделанных с помощью скрипта.</p>
+
+                    <p>&lt;label&gt; — оформляет пометку для поля, созданного тегом &lt;input&gt;.</p>
+
+                    <p><br>
+                        &lt;textarea&gt;&lt;/textarea&gt; — создаёт большие поля для ввода текста.</p>
+
+                </div>
+            </div>
+
+            <div id="txt_3">
+                <p>В разработке</p>
+            </div>
+
+        </div>
     </main>
 
 </body>

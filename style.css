@@ -2,10 +2,10 @@ ul {
     list-style: none;
 }
 main {
-    background: url(images/background.jpg);
+    background: url(images/image2.jpg);
 }
 a {
-    color: rgb(112, 87, 204);
+    color: rgb(187, 131, 48);
     font-size: 30px;
     
 }
@@ -13,13 +13,9 @@ h1 {
     font-size: 50px;
 }
 h2 {
-    font-size: 30px;
+    font-size: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
-    
-}
-.navig {
-    background: url(images/image2.jpg);
 }
 .p {
     font-size: 30px;
@@ -30,3 +26,45 @@ h2 {
     top: 50px;
     left: 15px;
 }
+label {
+    font-size: 50px;
+    
+}
+.t2 {
+    padding: 15px 20% 30px 20%;
+    font-size: 20px; 
+    text-align: left;
+}
+.tabs { 
+    width: 100%; 
+    padding: 0px; 
+    margin: 0 auto; 
+}
+.tabs>input { 
+    display: none; 
+}
+.tabs>div {
+    display: none;
+    padding: 12px;
+    border: 1px solid #C0C0C0;
+    background: url(images/background.jpg);
+}
+.tabs>label {
+    display: inline-block;
+    padding: 25px;
+    margin: 0 5px -1px 0;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #C0C0C0;
+    background: url(images/background.jpg);
+    cursor: pointer;
+}
+.tabs>input:checked + label {
+    color: #000000;
+    border: 1px solid #C0C0C0;
+    border-bottom: 1px solid #FFFFFF;
+    background: url(images/background.jpg);
+}
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3 { display: block; }
